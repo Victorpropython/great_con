@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>awebpage</title>
+  </head>
+    <body>
+      <header>
+        <h1><strong>Welcome to my Website</strong></h1>
+        <nav>
+        <div class="container" width="500" height="600" color="blue">
+         <ul class="menu">
+           <li><a href="{{url_for('home')}}">home</a></li>
+           <li><a href="{{url_for ('about')}}">about</a></li>
+         </ul>
+       </div>
+       </nav>
+     </header>
+      <div class="container">
+        {%block content%}
+        {% endblock%}
+      </div>
+   </body>
+</html>
